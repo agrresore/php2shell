@@ -193,11 +193,6 @@ complete mitigation for all paths covered by these CVEs.
 - [PHP official advisory: CVE-2026-109618](https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w)
 - [PHP official advisory: CVE-2026-109619](https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp)
 
-- [WizResearch — php2shell](https://www.wiz.io/blog/php2shell)
-- [9bie/php2shell-bypass-aslr-exp](https://github.com/9bie/php2shell-bypass-aslr-exp)
-- [devploit/php2shell](https://github.com/devploit/php2shell)
-- [NCSC-NL/php2shell Advisory](https://github.com/NCSC-NL/php2shell)
-
 ## License
 
 MIT. See [LICENSE](LICENSE).
