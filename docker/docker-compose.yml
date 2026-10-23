@@ -1,0 +1,9 @@
+services:
+  target:
+    build: .
+    container_name: php2shell-target
+    ports:
+      - "127.0.0.1:18110:80"
+    volumes:
+      - ../out:/out
+    restart: unless-stopped

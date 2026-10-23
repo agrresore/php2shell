@@ -1,0 +1,24 @@
+# Local output, proof files, and environment configuration
+out/
+.env
+.env.*
+*.env
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local binaries, logs, and crash dumps
+*.so
+*.log
+*.core
+core
+core.[0-9]*
+
+# Editor and operating-system files
+.DS_Store
+._*
+.idea/
+.vscode/

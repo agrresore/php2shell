@@ -1,0 +1,23 @@
+services:
+  phpmyadmin:
+    build: .
+    container_name: p2s-phpmyadmin
+    ports:
+      - "127.0.0.1:18130:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  db:
+    image: mariadb:11
+    container_name: p2s-phpmyadmin-db
+    environment:
+      MARIADB_ROOT_PASSWORD: rootpass123
+      MARIADB_DATABASE: testdb
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
